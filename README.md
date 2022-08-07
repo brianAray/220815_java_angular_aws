@@ -1,5 +1,3 @@
-> :exclamation: ***Trainers:** You can fork this guide from its repository [here](https://github.com/sophiagavrila/environment-setup) and link it in your welcome email to your batch sent out on the Friday before it starts so they're reay to code on day one. Mac setup guide [here](https://github.com/sophiagavrila/mac-install-guide).*
-
 # Java Environment Setup Guide
 
 > *This document provides a list of the required technologies for anyone who will be participating in the Fullstack Java batch. It details why each technology is required and provides some step-by-step instructions on how to install and configure the technologies. This guide also walks you through any needed environment setup.*
