@@ -37,8 +37,6 @@
 
 ## `Tuesday`
 
-- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ) 
-
 - What are the 4 pillars of Object Oriented Programming (OOP)?
 
 - What does the `static` non-access modifier mean?
