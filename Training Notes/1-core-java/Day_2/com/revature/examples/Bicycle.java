@@ -1,6 +1,4 @@
-package com.revature.models;
-
-import com.revature.ExampleInterface;
+package com.revature.examples;
 
 public class Bicycle implements ExampleInterface{
 	
