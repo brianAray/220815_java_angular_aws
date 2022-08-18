@@ -67,14 +67,14 @@ The notation theta is the formal way to express both the lower and upper bound o
 
 ---
 
-Constant : O(1)
-Logarithmic : O(log n)
-Linear : O(n)
-n log n : O(n log n)
-Quadratic : O(n^2)
-Cubic : O(n^3)
-Polynomial : n^O(1)
-Exponential : 2^O(n)
+- Constant : O(1)
+- Logarithmic : O(log n)
+- Linear : O(n)
+- n log n : O(n log n)
+- Quadratic : O(n^2)
+- Cubic : O(n^3)
+- Polynomial : n^O(1)
+- Exponential : 2^O(n)
 
 ---
 
