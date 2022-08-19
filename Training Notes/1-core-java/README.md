@@ -97,6 +97,43 @@
 
 <br>
 
+## `Friday`
+- What are these principles of OOP?
+    - DRY
+    - Single Responsibility
+    - Open / Closed
+    - Liskov Substitution
+    - Interface Segregation
+    - Dependency Inversion
+
+- What are SDLC Retrospectives?
+
+- What is a Generic?
+    - What is Subtyping?
+    - How do you use Generics in a method?
+
+- What is are Annotations?
+    - How do you create a custom annotation?
+
+- What is a Stack?
+    - What makes a stack different to a List?
+    - How do interact with a Stack in Java?
+
+- Describe the Stack and the Heap?
+
+- Is Java a Pass by Value or Pass by Reference?
+
+- Describe is Class Loading?
+
+- What is the Garbage Collector?
+    - Can you force the Garbage Collector to do things?
+    - What type of thread is the Garbage Collector?
+
+- What is JUnit? What do we use it for?
+
+- What is Mocking? How do we mock in Java?
+
+
 ### Resources: :mag:
 The first place you should be looking for the answers is in Google and your notes from class. Google will most likely lead you to the following websites which I reccomend you frequently refer to for accurate explanations of the concepts above:
 
