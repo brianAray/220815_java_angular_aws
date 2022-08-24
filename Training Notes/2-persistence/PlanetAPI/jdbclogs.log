@@ -1,0 +1,6 @@
+12:29:32.161 [main] ERROR fileLogger - Logging at error
+12:29:39.125 [main] ERROR fileLogger - Logging at error
+12:32:31.093 [main] ERROR fileLogger - Logging at error
+12:32:38.829 [main] DEBUG fileLogger - Get User from Database
+12:32:39.423 [main] ERROR fileLogger - org.postgresql.util.PSQLException: ERROR: syntax error at or near "SELEC"
+  Position: 1

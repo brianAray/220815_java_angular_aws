@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Please refer to the logback documentation for the proper tags and attributes -->
+<configuration>
+	
+	<!-- Inside the config tag, you can create several "appenders"
+		Appenders determine where you will log and what the format of the logging messages -->
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<!--  Encoder is determining the format of our logging message -->
+		
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- File appender uses a different class. Note that you can optionally create a rolling
+	file appender if youre concerned with the file getting too large -->
+	
+	<appender name="FILE"
+		class="ch.qos.logback.core.FileAppender">
+		<!-- Speicify the location of the file you're logging to -->	
+		<file>jdbclogs.log</file>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	
+	<logger name="consoleLogger" level="debug">
+		<appender-ref ref="STDOUT"/>
+	</logger>
+	
+	<logger name="fileLogger" level="debug">
+		<appender-ref ref="FILE"/>
+	</logger>
+	
+</configuration>
