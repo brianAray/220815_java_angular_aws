@@ -13,6 +13,7 @@ public interface UserDaoInterface {
 	
 	User getUser(String username, String password);
 	
+	
 	// UPDATE
 	
 	User updateUser(User updatedUser);

@@ -1,7 +1,6 @@
 package com.revature.repository;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -9,34 +8,36 @@ import java.sql.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.revature.repository.DTO.PlanetDTO;
 import com.revature.services.models.Customer;
+import com.revature.services.models.Planet;
 import com.revature.services.models.User;
 import com.revature.util.ConnectionFactory;
 
-public class UserDao implements UserDaoInterface{
+public class PlanetDao implements PlanetDaoInterface{
+	
 	
 	Logger consoleLogger;
 	Logger fileLogger;
 	
-	public UserDao() {
+	public PlanetDao() {
 		consoleLogger = LoggerFactory.getLogger("consoleLogger");
 		fileLogger = LoggerFactory.getLogger("fileLogger");
 	}
-
-	@Override
-	public User createUser(User newUser) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public static void main(String[] args) {
+		PlanetDao pDao = new PlanetDao();
+		System.out.println(pDao.selectPlanetById(1));
 	}
 
 	@Override
-	public User getUser(String username, String password) {
-		consoleLogger.debug("Getting user with username: " + username);
-		fileLogger.debug("Get User from Database");
+	public PlanetDTO selectPlanetById(Integer planetId) {
+		consoleLogger.debug("Getting user with planet with id: " + planetId);
+		fileLogger.debug("Get planet from Database with planet_id");
 		
-		User user = null;
+		PlanetDTO planet = null;
 		
-		final String sql = "SELECT * FROM users WHERE username = '"+username+"';";
+		final String sql = "SELECT * FROM planets WHERE planet_id = '"+planetId+"';";
 		
 		try (Connection connection = ConnectionFactory.getConnection();
 			Statement statement = connection.createStatement();)
@@ -44,32 +45,22 @@ public class UserDao implements UserDaoInterface{
 			ResultSet set = statement.executeQuery(sql);
 			
 			if(set.next()) {
-				user = new Customer(
+				planet = new PlanetDTO(
+						set.getInt(1),
 						set.getString(2),
-						set.getString(3),
-						set.getString(4));
-			}
-			
-			
+						set.getInt(3),
+						set.getInt(4),
+						set.getInt(5),
+						set.getInt(6)		
+						);
+			}	
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			consoleLogger.error(e.getMessage());
 			fileLogger.error(e.toString());
 		}
 		
-		return user;
-	}
-
-	@Override
-	public User updateUser(User updatedUser) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean deleteUser(User user) {
-		// TODO Auto-generated method stub
-		return false;
+		return planet;
 	}
 
 }

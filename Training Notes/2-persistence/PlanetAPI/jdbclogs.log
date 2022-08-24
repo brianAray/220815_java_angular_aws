@@ -4,3 +4,9 @@
 12:32:38.829 [main] DEBUG fileLogger - Get User from Database
 12:32:39.423 [main] ERROR fileLogger - org.postgresql.util.PSQLException: ERROR: syntax error at or near "SELEC"
   Position: 1
+17:18:15.557 [main] DEBUG fileLogger - Get planet from Database with planet_id
+17:18:15.564 [main] ERROR fileLogger - java.sql.SQLException: The url cannot be null
+17:19:01.138 [main] DEBUG fileLogger - Get planet from Database with planet_id
+17:19:01.968 [main] ERROR fileLogger - org.postgresql.util.PSQLException: ERROR: relation "planet" does not exist
+  Position: 15
+17:19:18.748 [main] DEBUG fileLogger - Get planet from Database with planet_id
