@@ -13,9 +13,9 @@ public class ConnectionFactory {
 	
 	public static Connection getConnection() throws SQLException{
 		return DriverManager.getConnection(
-				System.getenv("db_url"),
-				System.getenv("db_username"),
-				System.getenv("db_password"));
+				"jdbc:postgresql://java-angular-82322.cvmncwswsek7.us-east-2.rds.amazonaws.com:5432/postgres",
+				"postgres",
+				"password123");
 		
 	}
 

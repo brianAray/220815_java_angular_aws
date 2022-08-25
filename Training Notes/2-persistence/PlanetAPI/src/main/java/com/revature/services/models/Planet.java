@@ -5,6 +5,8 @@ import java.util.Objects;
 
 public class Planet extends CelestialBody{
 	
+	private Integer planetId;
+	
 	private Integer weight;
 	
 	private Integer value;
@@ -13,12 +15,22 @@ public class Planet extends CelestialBody{
 	
 	private List<Species> lifeForm;
 
-	public Planet(String name, Integer weight, Integer value, List<CelestialBody> orbitals, List<Species> lifeForm) {
+	public Planet(String name, Integer planetId, Integer weight, Integer value, List<CelestialBody> orbitals,
+			List<Species> lifeForm) {
 		super(name);
+		this.planetId = planetId;
 		this.weight = weight;
 		this.value = value;
 		this.orbitals = orbitals;
 		this.lifeForm = lifeForm;
+	}
+
+	public Integer getPlanetId() {
+		return planetId;
+	}
+
+	public void setPlanetId(Integer planetId) {
+		this.planetId = planetId;
 	}
 
 	public Integer getWeight() {
@@ -45,11 +57,19 @@ public class Planet extends CelestialBody{
 		this.orbitals = orbitals;
 	}
 
+	public List<Species> getLifeForm() {
+		return lifeForm;
+	}
+
+	public void setLifeForm(List<Species> lifeForm) {
+		this.lifeForm = lifeForm;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(lifeForm, orbitals, value, weight);
+		result = prime * result + Objects.hash(lifeForm, orbitals, planetId, value, weight);
 		return result;
 	}
 
@@ -63,14 +83,17 @@ public class Planet extends CelestialBody{
 			return false;
 		Planet other = (Planet) obj;
 		return Objects.equals(lifeForm, other.lifeForm) && Objects.equals(orbitals, other.orbitals)
-				&& Objects.equals(value, other.value) && Objects.equals(weight, other.weight);
+				&& Objects.equals(planetId, other.planetId) && Objects.equals(value, other.value)
+				&& Objects.equals(weight, other.weight);
 	}
 
 	@Override
 	public String toString() {
-		return "Planet [weight=" + weight + ", value=" + value + ", orbitals=" + orbitals + ", lifeForm=" + lifeForm
-				+ "]";
+		return "Planet [planetId=" + planetId + ", weight=" + weight + ", value=" + value + ", orbitals=" + orbitals
+				+ ", lifeForm=" + lifeForm + "]";
 	}
+
+	
 
 	
 	

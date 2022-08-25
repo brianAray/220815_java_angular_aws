@@ -1,11 +1,14 @@
 package com.revature.services.models;
 
+import java.util.Objects;
+
 public class Customer extends User{
 
-	public Customer(String username, String password, String email) {
-		super(username, password, email);
+	public Customer(Integer userId, String username, String password, String email, Integer balance) {
+		super(userId, username, password, email, balance);
 		// TODO Auto-generated constructor stub
 	}
 
-	
+
+
 }

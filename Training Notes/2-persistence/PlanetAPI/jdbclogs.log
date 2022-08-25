@@ -10,3 +10,34 @@
 17:19:01.968 [main] ERROR fileLogger - org.postgresql.util.PSQLException: ERROR: relation "planet" does not exist
   Position: 15
 17:19:18.748 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:23:45.186 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:23:45.189 [main] ERROR fileLogger - java.sql.SQLException: The url cannot be null
+14:25:29.407 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:25:29.486 [main] ERROR fileLogger - java.sql.SQLException: No suitable driver found for jdbc:postgresql://java-angular-82322.cvmncwswsek7.us-east-2.rds.amazonaws.com:5432
+14:25:39.614 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:25:40.331 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:25:40.584 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:25:40.853 [main] DEBUG fileLogger - Get User from Database
+14:26:39.523 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:26:40.306 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:26:40.543 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:26:40.785 [main] DEBUG fileLogger - Get User from Database
+14:44:53.040 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:44:53.819 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:44:54.060 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:45:49.125 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:45:49.755 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:45:49.979 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:45:50.212 [main] DEBUG fileLogger - Get User from Database
+14:50:01.520 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:50:02.285 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:50:02.537 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:50:02.779 [main] DEBUG fileLogger - Get User from Database
+14:50:23.122 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:50:23.783 [main] DEBUG fileLogger - Get moons from Database with planet_id
+14:50:24.026 [main] DEBUG fileLogger - Get species from Database with planet_id
+14:50:24.293 [main] DEBUG fileLogger - Get User from Database
+14:50:24.528 [main] DEBUG fileLogger - Get planet from Database with planet_id
+14:50:24.772 [main] DEBUG fileLogger - Get User from Database
+14:50:25.020 [main] DEBUG fileLogger - updated user inventory
+14:50:25.285 [main] ERROR fileLogger - org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.

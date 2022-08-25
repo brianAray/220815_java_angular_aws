@@ -5,7 +5,6 @@ import java.util.Scanner;
 import com.revature.controller.UserController;
 import com.revature.repository.UserDao;
 import com.revature.repository.UserDaoInterface;
-import com.revature.repository.UserStub;
 import com.revature.services.LoginService;
 
 public class Driver {

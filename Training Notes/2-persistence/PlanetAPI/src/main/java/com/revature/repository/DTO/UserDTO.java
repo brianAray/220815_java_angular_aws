@@ -12,14 +12,15 @@ public class UserDTO {
 	
 	protected String email;
 	
-	
+	protected Integer balance;
 
-	public UserDTO(Integer user_id, String username, String password, String email) {
+	public UserDTO(Integer user_id, String username, String password, String email, Integer balance) {
 		super();
 		this.user_id = user_id;
 		this.username = username;
 		this.password = password;
 		this.email = email;
+		this.balance = balance;
 	}
 
 	public Integer getUser_id() {
@@ -54,9 +55,17 @@ public class UserDTO {
 		this.email = email;
 	}
 
+	public Integer getBalance() {
+		return balance;
+	}
+
+	public void setBalance(Integer balance) {
+		this.balance = balance;
+	}
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(email, password, user_id, username);
+		return Objects.hash(balance, email, password, user_id, username);
 	}
 
 	@Override
@@ -68,15 +77,20 @@ public class UserDTO {
 		if (getClass() != obj.getClass())
 			return false;
 		UserDTO other = (UserDTO) obj;
-		return Objects.equals(email, other.email) && Objects.equals(password, other.password)
-				&& Objects.equals(user_id, other.user_id) && Objects.equals(username, other.username);
+		return Objects.equals(balance, other.balance) && Objects.equals(email, other.email)
+				&& Objects.equals(password, other.password) && Objects.equals(user_id, other.user_id)
+				&& Objects.equals(username, other.username);
 	}
 
 	@Override
 	public String toString() {
 		return "UserDTO [user_id=" + user_id + ", username=" + username + ", password=" + password + ", email=" + email
-				+ "]";
+				+ ", balance=" + balance + "]";
 	}
+	
+	
+
+	
 	
 	
 	

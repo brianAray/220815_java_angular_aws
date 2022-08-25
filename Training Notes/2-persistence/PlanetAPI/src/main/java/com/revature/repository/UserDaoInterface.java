@@ -1,5 +1,6 @@
 package com.revature.repository;
 
+import com.revature.repository.DTO.UserDTO;
 import com.revature.services.models.User;
 
 public interface UserDaoInterface {
@@ -21,5 +22,7 @@ public interface UserDaoInterface {
 	// DELETE
 	
 	boolean deleteUser(User user);
+
+	User selectUserById(Integer userId);
 
 }
