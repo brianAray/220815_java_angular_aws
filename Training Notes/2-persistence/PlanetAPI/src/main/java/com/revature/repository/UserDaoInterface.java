@@ -1,6 +1,7 @@
 package com.revature.repository;
 
 import com.revature.repository.DTO.UserDTO;
+import com.revature.repository.exceptions.UserNotFoundException;
 import com.revature.services.models.User;
 
 public interface UserDaoInterface {
@@ -12,7 +13,7 @@ public interface UserDaoInterface {
 	
 	// READ
 	
-	User getUser(String username, String password);
+	User getUser(String username, String password) throws UserNotFoundException;
 	
 	
 	// UPDATE

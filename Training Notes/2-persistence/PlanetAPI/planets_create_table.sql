@@ -52,4 +52,14 @@ create table planet_species_bridge (
 			references species(species_id)
 );
 
+create table user_inventory (
+	user_id integer,
+	planet_id integer,
+	constraint planet_id
+		foreign key(planet_id)
+			references planets(planet_id),
+	constraint user_id
+		foreign key(user_id)
+			references users(user_id)
+);
 

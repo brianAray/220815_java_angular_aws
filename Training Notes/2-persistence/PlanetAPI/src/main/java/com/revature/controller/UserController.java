@@ -2,6 +2,7 @@ package com.revature.controller;
 
 import java.util.Scanner;
 
+import com.revature.repository.exceptions.UserNotFoundException;
 import com.revature.services.LoginService;
 import com.revature.services.models.User;
 
@@ -23,7 +24,13 @@ public class UserController implements UserInputInterface, LoginInterface{
 			return null;
 		}
 		
-		User user = loginService.login(username, password);
+		User user = null;
+		try {
+			user = loginService.login(username, password);
+		} catch (UserNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return user;
 	}
 

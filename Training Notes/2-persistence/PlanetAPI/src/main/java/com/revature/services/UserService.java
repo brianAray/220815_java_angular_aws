@@ -1,6 +1,7 @@
 package com.revature.services;
 
 import com.revature.repository.UserDaoInterface;
+import com.revature.repository.exceptions.UserNotFoundException;
 import com.revature.services.models.Customer;
 import com.revature.services.models.User;
 
@@ -13,7 +14,7 @@ public class UserService {
 	}
 	
 
-	public Customer getCustomer(String username, String password) {
+	public Customer getCustomer(String username, String password) throws UserNotFoundException {
 		return convertUserDtoToCustomer(userDao.getUser(username, password));
 	}
 

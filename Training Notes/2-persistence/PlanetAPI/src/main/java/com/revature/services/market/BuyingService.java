@@ -5,6 +5,7 @@ import com.revature.repository.PlanetDao;
 import com.revature.repository.PlanetDaoInterface;
 import com.revature.repository.SpeciesDao;
 import com.revature.repository.UserDao;
+import com.revature.repository.exceptions.UserNotFoundException;
 import com.revature.services.DtoConversionService;
 import com.revature.services.LoginService;
 import com.revature.services.PlanetService;
@@ -22,7 +23,7 @@ public class BuyingService implements BuyingInterface{
 		this.dtoConversionService = dtoConversionService;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UserNotFoundException {
 		
 		UserDao uDao = new UserDao();
 		
@@ -60,3 +61,4 @@ public class BuyingService implements BuyingInterface{
 	}
 
 }
+

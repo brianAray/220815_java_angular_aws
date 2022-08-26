@@ -22,6 +22,13 @@ values
 ('Mars', 12310, 5, 2, 1),
 ('Xalo', 5234, 1, 1, 2);
 
+insert into moons(name, planet_id)
+values
+('Luna', 1),
+('Phobos', 2),
+('Deimos', 2),
+('Cheesy', 3);
+
 
 insert into planet_species_bridge(planet_id, species_id)
 values

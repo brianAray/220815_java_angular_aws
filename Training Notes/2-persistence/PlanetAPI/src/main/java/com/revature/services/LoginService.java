@@ -1,6 +1,7 @@
 package com.revature.services;
 
 import com.revature.repository.UserDaoInterface;
+import com.revature.repository.exceptions.UserNotFoundException;
 import com.revature.services.models.User;
 import com.revature.services.models.UserInterface;
 
@@ -14,7 +15,7 @@ public class LoginService implements UserInterface{
 	}
 
 	@Override
-	public User login(String username, String password) {
+	public User login(String username, String password) throws UserNotFoundException {
 		return userDao.getUser(username, password);	
 	}
 
