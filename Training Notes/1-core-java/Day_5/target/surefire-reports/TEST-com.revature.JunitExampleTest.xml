@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.revature.JunitExampleTest" time="0.003" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5\target\test-classes;C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5\target\classes;C:\Users\Bravo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Bravo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Bravo\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Bravo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Bravo\AppData\Local\Temp\surefire4274704075790689737\surefirebooter1961846804023704241.jar C:\Users\Bravo\AppData\Local\Temp\surefire4274704075790689737 2022-08-19T16-14-03_422-jvmRun1 surefire6146485353250377112tmp surefire_02963622392311164965tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5\target\test-classes;C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5\target\classes;C:\Users\Bravo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Bravo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Bravo\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Bravo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Bravo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_311\jre"/>
+    <property name="basedir" value="C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Bravo\AppData\Local\Temp\surefire4274704075790689737\surefirebooter1961846804023704241.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_311\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_311\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_311-b11"/>
+    <property name="user.name" value="Bravo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Bravo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Bravo\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_311"/>
+    <property name="user.dir" value="C:\Users\Bravo\Programming\Repositories\Batches\220815_java_angular_aws\Training Notes\1-core-java\Day_5"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Bravo\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\mingw64\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\local\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\mingw64\bin;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\bin;C:\Users\Bravo\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Python310\Scripts;C:\Program Files\Python310;C:\Program Files\Oculus\Support\oculus-runtime;C:\Python310\Scripts;C:\Python310;C:\jdk-17\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files (x86)\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_311\bin;C:\Program Files\PuTTY;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\CMake\bin;C:\Program Files\dotnet;C:\Ninja;C:\Users\Bravo\scoop\apps\python\3.10.3\Scripts;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\nvim\bin;C:\Program Files\Apache Software Foundation\Tomcat 10.0_Tomcat11;C:\Users\Bravo\scoop\apps\python39\current\Scripts;C:\Users\Bravo\scoop\apps\python39\current;C:\Users\Bravo\scoop\apps\nodejs\current\bin;C:\Users\Bravo\scoop\apps\nodejs\current;C:\Users\Bravo\scoop\apps\maven\current\bin;C:\Users\Bravo\scoop\shims;C:\Users\Bravo\AppData\Local\Microsoft\WindowsApps;C:\Users\Bravo\.dotnet\tools;C:\Users\Bravo\AppData\Roaming\npm;C:\Users\Bravo\scoop\apps\ojdkbuild8-full\1.8.0.312-1.b07\_tmp\SourceDir\ojdkbuild\java-1.8.0-openjdk-1.8.0.312-1\bin;C:\Users\Bravo\AppData\Local\GitHubDesktop\bin;C:\Users\Bravo\.dotnet\tools;C:\Users\Bravo\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;C:\Users\Bravo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bravo\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\bin\vendor_perl;C:\Users\Bravo\scoop\apps\git\2.34.1.windows.1\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.311-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_311\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+</testsuite>
