@@ -6,6 +6,6 @@
   
   <properties>
   	<maven.source.compiler>1.8</maven.source.compiler>
-  	  	<maven.source.target>1.8</maven.source.target>
+  	<maven.source.target>1.8</maven.source.target>
   </properties>
 </project>
