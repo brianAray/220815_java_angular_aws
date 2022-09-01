@@ -1,5 +1,8 @@
 # Project 1 - Custom Object Relational Mapping Framework
 
+- Assigned Date : 9/1/2022
+- Due Date : 9/14/2022
+
 ## Description
 
 Your project will be to create a custom object relational mapping (ORM) framework. This framework will allow for a simplified and SQL-free interaction with the relational data source. The requires of the project are purposefully vague, the intention is to allow for you to be creative in your implementation of this framework. There are many ways that this task can be approached, and you are encouraged to explore existing Java ORM implementations in order to get some inspiration. The minimum requirement for the custom ORM is to abstract JDBC boilerplate logic from the application which uses it.
