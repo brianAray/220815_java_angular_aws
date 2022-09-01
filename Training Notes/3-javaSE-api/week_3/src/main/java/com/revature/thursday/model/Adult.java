@@ -23,6 +23,10 @@ public class Adult implements Person{
 		System.out.println(noName);
 	}
 	
+	private void thisIsJustPrivate() {
+		System.out.println("I can't be called normally outside of the class");
+	}
+	
 
 	public String getName() {
 		return name;
