@@ -114,7 +114,28 @@ class Task implements Runnable{
 	
 }
 
-
+/*
+ * Risks in using Thread Pools
+ * 
+ * Deadlock 
+ * While deadlock can occur in any multi-threaded program, thread pools introduce another
+ * case of deadlock. In this case, all the executing threads are waiting for the results from the
+ * blocked threads waiting in the queue due to the unavailability of threads for execution.
+ * 
+ * Thread Leakage
+ * Thread leakage occurs if a thread is removed from the pool to execute a task but not returned
+ * to it when the task is completed.
+ * An example, if the thread throws an exception and pool class does not catch this exception, then
+ * the thread will simply exit, reducing the size of the pool by one. If this repeats, eventually the
+ * pool will become empty and no threads would be available to execute any other requests.
+ * 
+ * Resource Thrashing
+ * If the thread pool size is very large the time is wasted in context switching between threads.
+ * Having more threads than the optimal number may cause starvation problem leading to
+ * resource thrashing as explained.
+ * 
+ * 
+ */
 
 
 
