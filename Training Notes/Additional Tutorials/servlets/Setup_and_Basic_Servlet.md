@@ -7,7 +7,7 @@
 - Install
 - Remember location
 
-## Step 2 - Make sure you have Eclipse IDE Enterprise edition
+## Step 2 - Make sure you have Spring Tool Suite or Eclipse IDE Enterprise edition
 	
 - Install it if you do not have it
 - IntelliJ will not be an option for this
