@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+	<servlet>
+		<servlet-name>Greg</servlet-name>
+		<servlet-class>com.revature.simpleexample.AddServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ErrorHandler</servlet-name>
+		<servlet-class>com.revature.loginfeature.ErrorHandler</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Greg</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ErrorHandler</servlet-name>
+		<url-pattern>/ErrorHandler</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Error Code related Error Pages -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/ErrorHandler</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>403</error-code>
+		<location>/ErrorHandler</location>
+	</error-page>
+	
+	<!-- Exception Type Related ERror Page -->
+	<error-page>
+		<exception-type>
+			javax.servlet.ServletException
+		</exception-type>
+		<location>/ErrorHandler</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>
+			java.io.IOException
+		</exception-type>
+		<location>/ErrorHandler</location>
+	</error-page>
+
+</web-app>
+
+
+
+
+
+
+
+

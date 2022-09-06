@@ -618,3 +618,5 @@
 2022-09-02 11:51:14,438 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BrianArayathel\Programming\batches\220815_java_angular_aws\Training Notes\3-javaSE-api\week_3\src\test\resources
 2022-09-02 11:51:33,791 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-09-02 11:51:33,792 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BrianArayathel\Programming\batches\220815_java_angular_aws\Training Notes\3-javaSE-api\week_3\src\main\resources
+2022-09-02 11:51:33,800 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-02 11:51:33,806 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BrianArayathel\Programming\batches\220815_java_angular_aws\Training Notes\3-javaSE-api\week_3\src\test\resources
