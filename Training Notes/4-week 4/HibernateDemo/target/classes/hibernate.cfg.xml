@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+<hibernate-configuration>
+	<session-factory>
+		
+		<!-- Connection Settings -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://java-angular-82322.cvmncwswsek7.us-east-2.rds.amazonaws.com:5432/postgres</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">password123</property>
+		
+		<!-- SQL Dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		
+		<!-- Print Executed SQL to STDOUT -->
+		<property name="show_sql">true</property>
+		
+		<!-- When we start the application there are automatically 5 connection ready to be used -->
+		<property name="hibernate.connection.pool_size">5</property>
+		
+		<!-- Update Database on startup -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		
+		<!-- Annotated Entity Classes -->
+		<mapping class="com.revature.models.Crime"/>
+		<mapping class="com.revature.models.SuperVillain"/>
+		
+	</session-factory>
+
+</hibernate-configuration>

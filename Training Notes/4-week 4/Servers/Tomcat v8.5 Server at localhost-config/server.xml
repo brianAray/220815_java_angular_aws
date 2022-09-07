@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ServletExamples" path="/ServletExamples" reloadable="true" source="org.eclipse.jst.jee.server:ServletExamples"/><Context docBase="aws_ec2_demo_1" path="/aws_ec2_demo_1" reloadable="true" source="org.eclipse.jst.jee.server:aws_ec2_demo_1"/><Context docBase="FrontControllerDemo" path="/FrontControllerDemo" reloadable="true" source="org.eclipse.jst.jee.server:FrontControllerDemo"/></Host>
+      <Context docBase="ServletExamples" path="/ServletExamples" reloadable="true" source="org.eclipse.jst.jee.server:ServletExamples"/><Context docBase="aws_ec2_demo_1" path="/aws_ec2_demo_1" reloadable="true" source="org.eclipse.jst.jee.server:aws_ec2_demo_1"/><Context docBase="FrontControllerDemo" path="/FrontControllerDemo" reloadable="true" source="org.eclipse.jst.jee.server:FrontControllerDemo"/><Context docBase="FrontControllerMavenDemo" path="/FrontControllerMavenDemo" reloadable="true" source="org.eclipse.jst.jee.server:FrontControllerMavenDemo"/><Context docBase="MavenDemoServlet" path="/MavenDemoServlet" reloadable="true" source="org.eclipse.jst.jee.server:MavenDemoServlet"/></Host>
     </Engine>
   </Service>
 </Server>
