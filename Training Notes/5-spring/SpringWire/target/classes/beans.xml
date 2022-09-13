@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Autowire by name -->
+
+<bean id="application" class="com.revature.byname.Application" autowire="byName"/>
+
+<bean id="applicationUser" class="com.revature.byname.ApplicationUser">
+	<property name="name" value="admin"/>
+</bean>
+        
+<!-- Autowire by Type -->
+
+<bean id="employee" class="com.revature.bytype.Employee" autowire="byType"/>
+
+<bean id="employeeAddress" class="com.revature.bytype.EmployeeAddress" >
+	<property name="street" value="123 Street"/>
+	<property name="city" value="new City"/>
+</bean>
+
+
+<!-- Autowire by Constructor -->
+
+<bean id="performer" class="com.revature.constructor.Performer" autowire="constructor"/>
+
+<bean id="instrument" class="com.revature.constructor.Instrument">
+	<property name="name" value="Oboe"/>
+</bean>
+
+
+        
+</beans>

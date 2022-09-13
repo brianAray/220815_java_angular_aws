@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- XML based configuration -->
+        
+        <bean id="messageMaker" class="com.revature.MessageMaker">
+        	<property name="message" value="Default Message"/>
+        </bean>
+        
+        <bean id="helloWorld" class="com.revature.HelloWorld">
+        	<property name="messageMaker" ref="messageMaker"/>
+        </bean>
+</beans>
