@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+
+    HTML Tags
+    These are the starting and ending parts of an HTML element, they begin with < symbol and end with a > symbol
+    ANything written inside <> are tags
+
+    Html Elements
+    These enclose the contents between the tags. They consist of some kind of structure or expression
+    It generally consists of a start tag, content and an end tag
+
+    HTML Attributes
+    It is used to define the character of an HTML element. It is always placed in the opening tag of an element.
+    It generally procides additional styling to the element.
+    
+    -->
+
+    <h1>Hello World</h1>
+    <h6>Hello There</h6>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum expedita porro accusamus adipisci tempore nesciunt, earum dolor sequi reiciendis incidunt saepe fuga tenetur consectetur quo perferendis qui quisquam? Et, magni.</p>
+    <br>
+    <p align="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil tenetur inventore dolores. Magnam vitae illum temporibus dolor similique explicabo excepturi a autem obcaecati. Nihil consequatur aut id veritatis illo.</p>    
+
+    <!--
+
+    Semantic Elements
+
+    These are used to descirbe meaning to both the developer and the browser
+
+    Examples of Non-semantic
+    <div>
+    <span>
+    Both of these tell nothing about its content, purely for organization
+
+    Examples of semantic
+    <form>
+    <table>
+    <article>
+    Clearly defines its content
+
+    -->
+
+    <div id="image_container">
+
+        <div class="cats">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+        </div>
+        <div class="cats">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+        </div>
+        <div class="cats">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+        </div>
+        <div class="cats">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+        </div>
+        <div class="cats">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+        </div>
+    </div>
+
+    <!--
+
+    Tables
+
+    Used to group data in the form of rows and columns
+
+    Table Rows
+    Each table row starts with <tr> and ends with </tr> tag
+
+    Table Headers
+    If you want to specify a header instead of data, use <th>
+
+    Table Data
+    Data in the cells of the table, use <td>
+    -->
+
+    <table style="border: 1px solid;">
+        <tr>
+            <th>Food</th>
+            <th>Description</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Spaghetti</td>
+            <td>Long egg noodle</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Spaghetti</td>
+            <td>Long egg noodle</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Spaghetti</td>
+            <td>Long egg noodle</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Spaghetti</td>
+            <td>Long egg noodle</td>
+            <td>$10.00</td>
+        </tr>
+    </table>
+
+
+    <!--
+    Form Element
+    -->
+
+    <form action="">
+        <label for="username">Username</label>
+        <br>
+        <input type="text" name="username" id="username">
+
+        <br>
+
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password">
+
+        <br>
+        <input type="radio" id="en" name="language" value="English">
+        <label for="en" >English</label>
+        <br>
+        <input type="radio" id="es" name="language" value="Spanish">
+        <label for="es" >Spanish</label>
+
+        <input type="submit">
+    </form>
+
+
+    <dic class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </dic>
+
+</body>
+</html>

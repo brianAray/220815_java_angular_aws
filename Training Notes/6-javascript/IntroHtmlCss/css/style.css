@@ -1,0 +1,103 @@
+/* 
+Cascading Order
+
+1. Inline style
+2. External and Internal Style sheets
+3. Browser default
+
+A CSS ruleset is various affirmation to various pieces or elements of the document
+
+selector {
+property: value;
+}
+
+*/
+
+body {
+    background-color: darkmagenta;
+}
+
+h1 {
+    color:coral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    width:100px;
+}
+
+/*
+Grabbing the class with the . operator
+*/
+.cats{
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+    width: 50%;
+}
+
+/*
+Grabbing the id with the # operator
+*/
+
+#image_container{
+    background-color: beige;
+}
+
+[type="password"],
+input:focus {
+    color : blue;
+}
+
+/*
+CSS Box Model
+
+Content : The content of the box, where text and images appear
+Padding : Clears an area around the content. The padding is transparent
+Border : A border that goes around the padding and content
+Margin : Clears an area outside the border. The margin is transparent
+*/
+
+#image_container,.cats{
+    width : 300px;
+    border: 20px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+/*
+An HTML element becomes a grid container when its display property is set to grid or inline-grid
+
+All direct children of the grid container are automatically grid items
+
+_____________
+| 1 | 2 | 3 |
+-------------
+| 4 | 5 | 6 |
+-------------
+
+Grid Columns
+The vertical lines of a grid items are called columns
+
+Grid Rows
+The horizontal lines of grid items are called rows
+
+Grid Gaps
+The spaces between each column / row are called gaps
+
+Grid Lines
+
+The lines between columns are called column lines
+The lines between rows are called row lines
+*/
+
+.grid-container{
+    display:grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    gap: 100px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
