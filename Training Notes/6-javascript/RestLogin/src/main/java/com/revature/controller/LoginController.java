@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.model.User;
+import com.revature.model.Login;
 import com.revature.service.LoginService;
 import com.revature.util.UserNotFoundException;
 
@@ -27,7 +27,7 @@ public class LoginController {
 	}
 
 	@PostMapping()
-	public User login(@RequestBody User user) throws UserNotFoundException{
+	public Login login(@RequestBody Login user) throws UserNotFoundException{
 		return loginService.login(user);
 	}
 }

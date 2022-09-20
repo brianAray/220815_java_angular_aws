@@ -2,6 +2,14 @@ let banner = document.querySelector("#banner");
 
 window.addEventListener("load", renderLogin)
 
+
+let resetButton = document.createElement("input");
+resetButton.type = "button";
+resetButton.value = "Restart Page";
+resetButton.addEventListener("click", derenderPage);
+
+document.querySelector("body").appendChild(resetButton);
+
 function renderLogin(){
     let loginContainer = document.createElement("div");
     loginContainer.id = "login";
@@ -59,14 +67,24 @@ function renderLogin(){
 
 function derenderPage(){
     document.querySelector("body").innerHTML = "";
+    let resetButton = document.createElement("input");
+    resetButton.type = "button";
+    resetButton.value = "Restart Page";
+    resetButton.addEventListener("click", derenderPage);
+
+    document.querySelector("body").appendChild(resetButton);
+    renderLogin();
 }
 
 function renderHomepage(data){
     derenderPage();
-    let userbanner = document.createElement("h1");
-    userbanner.innerText = data.username;
-
-    document.querySelector("body").appendChild(userbanner);
+    
+    for(let property in data){
+        let item = document.createElement("h1");
+        item.innerText = data[property];
+        document.querySelector("body").appendChild(item);
+    }
+    
 }
 
 async function asyncLogin(){
@@ -92,8 +110,20 @@ async function asyncLogin(){
         )
 
         let data = await response.json();
-        console.log(data);
-        renderHomepage(data);
+        asyncGetCustomer(data.id, renderHomepage)
+    }catch(error){
+        console.error(`Error is ${error}`);
+    }
+}
+
+async function asyncGetCustomer(id, renderHomepage){
+    let url = `http://localhost:8080/customer/${id}`;
+
+    try{
+        let response = await fetch(url);
+
+        let data = await response.json();
+        renderHomepage(data)
     }catch(error){
         console.error(`Error is ${error}`);
     }
