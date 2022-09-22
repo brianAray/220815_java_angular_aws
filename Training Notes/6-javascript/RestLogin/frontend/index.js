@@ -91,7 +91,7 @@ async function asyncLogin(){
     let userInput = document.querySelector("#username").value;
     let passInput = document.querySelector("#password").value;
 
-    const url = `http://localhost:8080/login`;
+    const url = `http://50.207.204.190:8080/login`;
 
     let loginObj = {
         username: userInput,
@@ -117,7 +117,7 @@ async function asyncLogin(){
 }
 
 async function asyncGetCustomer(id, renderHomepage){
-    let url = `http://localhost:8080/customer/${id}`;
+    let url = `http://50.207.204.190:8080/customer/${id}`;
 
     try{
         let response = await fetch(url);
