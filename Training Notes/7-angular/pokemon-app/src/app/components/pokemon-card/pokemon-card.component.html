@@ -1,0 +1,16 @@
+<table>
+    <tbody>
+        <tr>
+            <td [ngClass]="pokemon.id > 100 ? 'uncool' : 'cool'">{{pokemon.id}}</td>
+            <td>{{pokemon.name}}</td>
+            
+            <td [ngStyle]="{'background-color':getColor(pokemon.base_experience)}">{{pokemon.base_experience}}</td>
+
+            <td [ngStyle]="{'background-color': pokemon.rating > 5 ? 'green' : 'red'}" >{{pokemon.rating}}</td>
+
+            <td (click)="printPokemonName(pokemon.name)">
+                <img *ngIf="isImageVisible" [src] = "pokemon.sprites.front_default">
+            </td>
+        </tr>
+    </tbody>
+</table>

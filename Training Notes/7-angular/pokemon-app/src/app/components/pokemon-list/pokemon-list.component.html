@@ -1,4 +1,17 @@
+
 <h1>{{title}}</h1>
+
+<!-- Standard HTML-->
+<input placeholder = "some text">
+
+<!-- Interpolation -->
+<input placeholder = "{{ title }}">
+
+<!-- Property Binding -->
+<input [placeholder]="title">
+
+<h1>Pokemon name: {{clickedPokemonName}}</h1>
+
 <table class="table table-striped table-hover">
     <thead>
         <tr>
@@ -6,18 +19,20 @@
             <td>Name</td>
             <td>Base Experience</td>
             <td>Image
+                <!-- Event binding with () and attached to a function-->
                 <button (click)="changeImageVisible()" class="btn btn-primary">Hide</button>
             </td>
         </tr>
     </thead>
     <tbody>
+        <!-- Structural directive always begin with a *-->
+        <!-- Structural directives change the structure of the DOM
+        They can add, remove, or replace elements-->
+        <!-- ngFor will loop through an array and repeat-->
         <tr *ngFor="let pokemon of listOfPokemon">
-            <td>{{pokemon.id}}</td>
-            <td>{{pokemon.name}}</td>
-            <td>{{pokemon.base_experience}}</td>
-            <td>
-                <img *ngIf="isImageVisible" [src] = "pokemon.sprites.front_default">
-            </td>
+
+            <!-- <child selector [item in child]="property in parent"></child selecto>-->
+            <app-pokemon-card [pokemon]="pokemon" [isImageVisible]="isImageVisible" (clickPokemonEvent)="displayPokemonName($event)"></app-pokemon-card>
         </tr>
     </tbody>
 </table>
