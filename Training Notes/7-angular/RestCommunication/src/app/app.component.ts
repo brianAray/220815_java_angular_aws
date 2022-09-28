@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { HttpClient , HttpParams, HttpHeaders} from '@angular/common/http';
 import { Post } from './models/post';
 import { Observable } from 'rxjs/internal/Observable';
-
-import { catchError , retry } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { catchError , retry, tap} from 'rxjs/operators';
+import { LoggerService } from './services/logger.service';
 
 @Component({
   selector: 'app-root',
@@ -19,12 +20,18 @@ export class AppComponent {
 
   newPost!: Observable<Post | any>;
 
-  constructor(private http: HttpClient){}
+  constructor(
+    private http: HttpClient,
+    private logger: LoggerService){}
 
   getData(){
     let params = new HttpParams().set('id', '4');
     let headers = new HttpHeaders().set('Authorization', 'jwt-token');
-    this.posts = this.http.get<Post[]>(this.ROOT_URL + '/posts', {params, headers});
+    this.posts = this.http.get<Post[]>(this.ROOT_URL + '/posts', {params, headers})
+      .pipe(
+        tap(data => this.logger.log(data))
+      );
+    
   }
 
   createData(){
@@ -43,9 +50,10 @@ export class AppComponent {
       .pipe(
         retry(3),
         catchError( err => {
-          console.log(err);
-          return new Observable<any>(err);
-        })
+          this.logger.error(err)
+          return of(err);
+        }),
+        tap(data => this.logger.log(data))
       )
 
   }

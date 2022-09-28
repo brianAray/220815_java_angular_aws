@@ -1,0 +1,43 @@
+<!-- ngModel singular -->
+
+<h1>ngModel on its own</h1>
+
+<!-- Specify the id of the element using #idName -->
+<!-- If you want to access the element with a specific data type (ngModel) then assign
+that to it when you define it
+
+ngModel outside of forms need to be associated with a specific variable
+
+Use this for updating display based on user input
+
+-->
+<input [(ngModel)]="value" #id="ngModel" required minlength="4">
+<p>Input Text: {{ value }}</p>
+<p>Is Valid? {{ id.valid }}</p>
+
+<button (click)="setValue()">Set Value</button>
+
+<!-- ngModel with ngForm -->
+
+<!--
+
+    ngModel with ngForms 
+    Give an ID to the form element
+    ngSubmit is used to override the submit functionality of the form
+    Handle this with a function and pass in the formId
+
+    Every input in a ngForm requires the ngModel attribute and a name
+-->
+
+<h1>ngModel with ngForm</h1>
+<br>
+<form #formId="ngForm" (ngSubmit)="onSubmit(formId)" novalidate>
+    <input name="firstParam" ngModel required #firstParam="ngModel">
+    <input name="secondParam" ngModel>
+    <button>Submit</button>
+</form>
+
+<p>First Parameter value : {{firstParam.value}}</p>
+<p>First Parameter valid : {{firstParam.valid}}</p>
+<p>Form Value: {{formId.value | json}}</p>
+<p>Form Valid: {{formId.valid}}</p>
