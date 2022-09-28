@@ -1,0 +1,11 @@
+<h1>Rest Communication / HTTP Requests in Angular</h1>
+
+<button (click)="getData()">Get Data</button>
+<div *ngFor="let post of posts | async">
+  {{ post | json }}
+</div>
+
+<button (click)="createData()">Post Data</button>
+<div>
+  {{ newPost | async | json }}
+</div>
