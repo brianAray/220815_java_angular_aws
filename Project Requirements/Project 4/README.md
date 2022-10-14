@@ -11,7 +11,6 @@ When you're presenting, you're welcome to provide a brief slideshow demonstratin
 - Spring ORM
 - Spring AOP
 - Angular Frontend
-- Consume a RESTful API
 - Amazon RDS
 - GitHub 
 - Unit Tests (70% code coverage)
